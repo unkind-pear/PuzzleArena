@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"sound_select_button_1",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.75059,
+  "name":"sound_select_button_1",
+  "parent":{
+    "name":"Buttons",
+    "path":"folders/Sounds/Menu/Buttons.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"sound_select_button_1.wav",
+  "type":0,
+  "volume":1.0,
+}

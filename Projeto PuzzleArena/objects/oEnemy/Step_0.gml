@@ -24,6 +24,7 @@ else {
 }
 
 if place_meeting(x, y, o_DamageEnemy) {
+	audio_play_sound(Hit_damage_1, 10, false)
 	
 	var _damage_list = ds_list_create(); // Cria para todos os danos atualmente no inimigo
 	instance_place_list(x, y, o_DamageEnemy, _damage_list, false); // Coloca o dano atual na lista

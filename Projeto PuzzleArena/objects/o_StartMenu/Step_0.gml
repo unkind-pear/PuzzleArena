@@ -34,7 +34,7 @@ if enter or mouse_clicked == 1{
 		case 0: //Menu Principal
 			switch option_choose{
 				case 0:
-					room_goto(Arena)
+					room_goto(rm_forest)
 				break;
 			
 				case 1:

@@ -10,8 +10,8 @@
   "name":"o_StartMenu",
   "overriddenProperties":[],
   "parent":{
-    "name":"Menu",
-    "path":"folders/Objects/Menu.yy",
+    "name":"[no name]",
+    "path":"folders/Objects/[no name].yy",
   },
   "parentObjectId":null,
   "persistent":false,
