@@ -1,0 +1,1 @@
+if(!instance_exists(parent)) {instance_destroy()} //Se o nightborne morrer, deleta

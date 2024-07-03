@@ -1,0 +1,1 @@
+ds_list_destroy(damage_list_old);

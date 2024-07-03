@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"Bullets",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Bullets",
+  "parent":{
+    "name":"Weapons",
+    "path":"folders/Objects/Weapons.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

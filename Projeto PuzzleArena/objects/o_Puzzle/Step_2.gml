@@ -1,0 +1,1 @@
+if Wave_Can_Pass == 1 {result = "Correto!"}
