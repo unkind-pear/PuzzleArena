@@ -1,5 +1,6 @@
 {
   "FolderOrderSettings":[
+    {"name":"Fonts","order":7,"path":"folders/Fonts.yy",},
     {"name":"Objects","order":1,"path":"folders/Objects.yy",},
     {"name":"[no name]","order":4,"path":"folders/Objects/[no name].yy",},
     {"name":"Buttons","order":2,"path":"folders/Objects/[no name]/Buttons.yy",},
@@ -63,6 +64,9 @@
     {"name":"o_Upgrade","order":2,"path":"objects/o_Upgrade/o_Upgrade.yy",},
     {"name":"o_Uzi","order":3,"path":"objects/o_Uzi/o_Uzi.yy",},
     {"name":"o_Weapon","order":2,"path":"objects/o_Weapon/o_Weapon.yy",},
+    {"name":"obj_button_options","order":3,"path":"objects/obj_button_options/obj_button_options.yy",},
+    {"name":"obj_button_play","order":1,"path":"objects/obj_button_play/obj_button_play.yy",},
+    {"name":"obj_button_quit","order":2,"path":"objects/obj_button_quit/obj_button_quit.yy",},
     {"name":"oBringuerOfDeathSpell","order":1,"path":"objects/oBringuerOfDeathSpell/oBringuerOfDeathSpell.yy",},
     {"name":"oEnemy","order":1,"path":"objects/oEnemy/oEnemy.yy",},
     {"name":"oEnemyAttack","order":4,"path":"objects/oEnemyAttack/oEnemyAttack.yy",},
@@ -148,6 +152,7 @@
     {"name":"Sprite_Wall","order":2,"path":"sprites/Sprite_Wall/Sprite_Wall.yy",},
     {"name":"Sprite66","order":4,"path":"sprites/Sprite66/Sprite66.yy",},
     {"name":"Sprite67","order":5,"path":"sprites/Sprite67/Sprite67.yy",},
+    {"name":"Sprite76","order":2,"path":"sprites/Sprite76/Sprite76.yy",},
     {"name":"TileSet_Wall","order":3,"path":"tilesets/TileSet_Wall/TileSet_Wall.yy",},
   ],
 }

@@ -1,5 +1,5 @@
-image_xscale = lerp(image_xscale, 1.2, 0.2)
-image_yscale = lerp(image_yscale, 1.2, 0.2)
+image_xscale = lerp(image_xscale, 1.2, 0.1)
+image_yscale = lerp(image_yscale, 1.2, 0.1)
 
 if (abs(1.2 - image_xscale) < 0.1) {
 	if (!audio_is_playing(sound_main_menu_theme)) {
@@ -7,18 +7,16 @@ if (abs(1.2 - image_xscale) < 0.1) {
 	}
 	
 	if (right) {
-		image_angle = lerp(image_angle, -5, 0.2)
+		image_angle = lerp(image_angle, -5, 0.15)
 		
 		if (abs(5 + image_angle < 0.1)) {
 			right = false
 		}
 	} else {
-		image_angle = lerp(image_angle, 5, 0.2)
+		image_angle = lerp(image_angle, 5, 0.15)
 		
 		if (abs(5 - image_angle < 0.1)) {
 			right = true
 		}
 	}
 }
-
-audio_get
