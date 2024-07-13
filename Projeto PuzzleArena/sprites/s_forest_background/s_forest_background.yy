@@ -73,7 +73,7 @@
   "origin":0,
   "parent":{
     "name":"Menu",
-    "path":"folders/Sprites/Menu.yy",
+    "path":"folders/Sprites/UI/Menu.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
