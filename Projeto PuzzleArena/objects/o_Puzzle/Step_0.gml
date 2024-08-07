@@ -15,7 +15,7 @@ if type == 0{
 	count_type_display = " - "
 } if type == 2{
 	real_result = count1 * count2
-	count_type_display = " * "
+	count_type_display = " X "
 } if type == 3{
 	while justo == 0{
 		real_result = count1 / count2
