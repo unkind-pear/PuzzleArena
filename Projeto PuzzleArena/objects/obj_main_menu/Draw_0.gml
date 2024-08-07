@@ -2,7 +2,7 @@ draw_set_halign(fa_center)
 draw_set_valign(fa_middle)
 draw_set_font(fnt_pixel)
 
-var _gap = 140
+var _gap = 220
 
 for (var i = 0; i < array_length(menu); i++) {	
 	var _text_x = room_width/2
@@ -27,3 +27,5 @@ for (var i = 0; i < array_length(menu); i++) {
 	
 	draw_text_transformed(_text_x, _text_y, menu[i], text_scale, text_scale, 0)
 }
+
+draw_set_font(-1)

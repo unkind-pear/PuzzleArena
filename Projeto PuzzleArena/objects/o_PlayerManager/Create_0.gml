@@ -1,1 +1,0 @@
-Weapon_List = [o_Flame, o_Katana, o_Knife, o_Uzi]
