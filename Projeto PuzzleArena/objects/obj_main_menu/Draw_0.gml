@@ -6,7 +6,7 @@ var _gap = 220
 
 for (var i = 0; i < array_length(menu); i++) {	
 	var _text_x = room_width/2
-	var _text_y = room_height * .5 + _gap * i
+	var _text_y = room_height * .6 + _gap * i
 	
 	
 	if (index == i) {

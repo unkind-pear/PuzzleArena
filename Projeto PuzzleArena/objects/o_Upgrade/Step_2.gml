@@ -15,7 +15,7 @@ if instance_exists(o_Player){
 
 if player.lv < o_EnemySpawner.wave{
 	if collision_rectangle(room_width/2-60-16+8, room_height/2+120, room_width/2-60+16-8, room_height/2+120+32, player, false, true){
-		if player.interact == true{
+		if player.interact == true or player.shoot == true{
 			UpgradePick(upgrade1, player, true)
 		
 			player.lv++
@@ -29,7 +29,7 @@ if player.lv < o_EnemySpawner.wave{
 	} else {text1 = false;}
 	
 	if collision_rectangle(room_width/2-16+8, room_height/2+120, room_width/2+16-8, room_height/2+120+32, player, false, true){
-		if player.interact == true{
+		if player.interact == true or player.shoot == true{
 			UpgradePick(upgrade2, player, true)
 		
 			player.lv++
@@ -42,7 +42,7 @@ if player.lv < o_EnemySpawner.wave{
 		text2 = true;
 	} else {text2 = false;}
 	if collision_rectangle(room_width/2+60-16+8, room_height/2+120, room_width/2+60+16-8, room_height/2+120+32, player, false, true){
-		if player.interact == true{
+		if player.interact == true or player.shoot == true{
 			UpgradePick(upgrade3, player, true)
 		
 			player.lv++
