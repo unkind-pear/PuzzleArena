@@ -98,5 +98,6 @@ if instance_exists(o_Player){
 			o_Stats.Wave = o_EnemySpawner.wave; 
 		}
 		
-		room_goto(Start)}
+		//room_goto(rm_forest)
+		}
 }

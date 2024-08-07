@@ -23,7 +23,7 @@ for (var i = 0; i < array_length(menu); i++) {
 
 	}
 	
-	if string_width()
+	//if string_width()
 	
 	draw_text_transformed(_text_x, _text_y, menu[i], text_scale, text_scale, 0)
 }
