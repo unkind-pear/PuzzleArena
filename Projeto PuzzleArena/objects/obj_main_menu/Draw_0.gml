@@ -25,7 +25,7 @@ for (var i = 0; i < array_length(menu); i++) {
 	
 	//if string_width()
 	
-	draw_text_transformed(_text_x, _text_y, menu[i], text_scale, text_scale, 0)
+	draw_text_transformed_color(_text_x, _text_y, menu[i], text_scale, text_scale, 0, c_white, c_white, c_white, c_white, 1)
 }
 
 draw_set_font(-1)

@@ -24,7 +24,7 @@ if (!stop) {
 if (_select) {
 	switch (index) {
 	    case 0:
-			instance_create_layer(x, y, "Instances", obj_room_transition)
+			instance_create_layer(x, y, "Instances", obj_room_transition, {room_to_go : 1})
 			stop = true
 
 	        break;

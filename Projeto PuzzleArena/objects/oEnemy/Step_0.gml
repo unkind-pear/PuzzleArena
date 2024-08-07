@@ -1,8 +1,16 @@
 if (target == noone or !instance_exists(target)) {
 	if (instance_exists(o_Player) and type == "Attack-Player") {
-		target = instance_nearest(x, y, o_Player)
-		target_x = target.x
-		target_y = target.y
+		var _p = instance_nearest(x, y, o_Player)
+		
+		if (point_distance(x, y, _p.x, _p.y) < (room_width^2 + room_height^2)^0.5) {
+			target = _p
+			target_x = target.x
+			target_y = target.y
+		}
+		else {
+			sprite_index = sprite_idle
+			state = "stop"
+		}
 	}
 	//else if (instance_exists(oPuzzle) and type == "Attack-Puzzle") { // Quando terminar o puzzle
 		//target = instance_nearest(x, y, oPuzle)

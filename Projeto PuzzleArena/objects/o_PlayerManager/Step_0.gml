@@ -48,43 +48,16 @@ for (var _players = 0; _players != _gp_num; _players++){	//Para cada controle el
 }
 
 if keyboard_check_pressed(vk_space){ //Mesma coisa de cima só que para o teclado
-	var _existe = 0
-	if instance_exists(o_Player){
-		for (var _p = 0; _p < instance_number(o_Player); ++_p){
-			var _keyboard_player = instance_find(o_Player , _p)
-			if _keyboard_player.id_player != -1{ _existe = 1 };
-			array_push(_playnumlist,_keyboard_player.num_player);
-		}
-		while !_playnumcorrido{
-			_playnumcorrido = 1;
-			for(var _h = 0; _h != array_length(_playnumlist); _h++){
-				if _playnum == _playnumlist[_h]{_playnum++; _playnumcorrido = 0}
-			}
-		}
-	}
-	if !_existe {
-		var _rand_x = irandom_range(room_width*0.1, room_width*0.9);
-		var _rand_y = irandom_range(room_height*0.1, room_height*0.9);
-
-		while place_meeting(_rand_x, _rand_y, oEnemy){
-			_rand_x = irandom_range(room_width*0.2, room_width*0.8);
-			_rand_y = irandom_range(room_height*0.2, room_height*0.8);
-		}
-
-		var _player = instance_create_layer(_rand_x, _rand_y, "Players", o_Player);
-			with (_player)
-			{
-				id_player = -1;
-				num_player = _playnum;
-			}
-			var _weapon = irandom(array_length(Weapon_List)-1)
-			instance_create_layer(_rand_x, _rand_y, "Players", Weapon_List[_weapon])
-	}
+	criarPlayer()
 }
 
 var deaths = 0;
 var crown = 0;
 if instance_exists(o_Player){
+	if crown = false{
+		instance_find(o_Player, irandom(instance_number(o_Player) - 1)).crown = true;
+	}
+	
 	for (var _i = 0; instance_number(o_Player) > _i; _i++){
 		var _player = instance_find(o_Player, _i)
 		if _player.ghost == true {deaths++}
@@ -100,11 +73,9 @@ if instance_exists(o_Player){
 			o_Stats.Wave = o_EnemySpawner.wave; 
 		}
 		
-		room_goto(rm_menu)
+		instance_create_layer(room_width/2, 0, "Players", obj_tela_de_morte)
+		instance_destroy(o_Player)
+		instance_destroy(o_Ghost)
 		}
-
-if crown = false{
-	instance_find(o_Player, irandom(instance_number(o_Player) - 1)).crown = true;
-}
 
 }
